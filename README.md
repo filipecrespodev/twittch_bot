@@ -2,11 +2,12 @@
 
 ## To Do
 
-- [ ]  Init project
+- [X]  Init project
 - [ ]  Authentication in Twitch.tv
 - [ ]  Config with info chanel
-- [ ]  Connect in chat and capture message
-- [ ]  Create test commands
+- [X]  Connect in chat and capture message
+- [X]  Create test commands
+- [ ]  Connect in twitch and capture events (sub, follow,...)
 
 ## Installation
 
