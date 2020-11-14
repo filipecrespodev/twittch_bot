@@ -1,3 +1,4 @@
+
 // Define our dependencies
 var express        = require('express');
 var session        = require('express-session');
@@ -7,10 +8,10 @@ var request        = require('request');
 var handlebars     = require('handlebars');
 
 // Define our constants, you will change these with your own
-const TWITCH_CLIENT_ID = '<CLIENTE_ID>';
-const TWITCH_SECRET    = '<CLIENTE_SECRET>';
-const SESSION_SECRET   = '<PASS_SESSION>';
-const CALLBACK_URL     = 'http://localhost:3000/auth/twitch/callback';  // You can run locally with - http://localhost:3000/auth/twitch/callback
+const TWITCH_CLIENT_ID = 'f7tfcchypw2uycwn8s96wwglmqvifm';
+const TWITCH_SECRET    = 'k5guclh49xw5kqw19du63439ku5xhz';
+const SESSION_SECRET   = '1234!@#$qweQWE';
+const CALLBACK_URL     = 'http://localhost:3000/auth/twitch/callback';
 
 // Initialize Express and middlewares
 var app = express();
@@ -79,8 +80,8 @@ scopesList = [
   'channel_subscriptions',
   'bits:read'
 ];
+
 // Set route to start OAuth link, this is where you define scopes to request
-// look the scopes in https://dev.twitch.tv/docs/authentication#scopes
 app.get('/auth/twitch', passport.authenticate('twitch', { scope: scopesList }));
 
 // Set route for OAuth redirect

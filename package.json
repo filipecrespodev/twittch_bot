@@ -1,26 +1,32 @@
 {
   "name": "twitch_bot",
   "version": "0.0.1",
-  "description": "bot for twitch tv",
-  "main": "bot.js",
+  "description": "Bot to twitch bot",
+  "main": "src",
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/filipecrespodev/twittch_bot.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "bot",
+    "twitch"
+  ],
+  "author": "Filipe Crespo <filipesoares.crespo@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/filipecrespodev/twittch_bot/issues"
   },
   "homepage": "https://github.com/filipecrespodev/twittch_bot#readme",
   "dependencies": {
-    "express": "^4.15.2",
-    "express-session": "^1.15.2",
-    "handlebars": "^4.0.6",
-    "passport": "^0.3.2",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.6",
+    "passport": "^0.4.1",
     "passport-oauth": "^1.0.0",
     "request": "^2.88.2",
     "tmi.js": "^1.5.0"
